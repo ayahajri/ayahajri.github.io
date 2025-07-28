@@ -1,0 +1,13 @@
+services:
+  - type: web
+    name: portfolio-flask
+    env: python
+    buildCommand: ""
+    startCommand: gunicorn app:app
+    envVars:
+      - key: EMAIL_ADDRESS
+        value: hajriaya16@gmail.com
+      - key: EMAIL_PASSWORD
+        value: zmeyjqrmkypjdsll
+      - key: RECIPIENT_EMAIL
+        value: hajriaya16@gmail.com
